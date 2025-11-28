@@ -68,9 +68,9 @@ module.exports = client;
 require("./handler")(client);
 
 client.login(process.env.TOKEN || client.config.TOKEN);
-const url = `https://www.twitch.tv/edoardo_fa_cose`;
+const url = `https://www.twitch.tv/jesgran`;
 client.on('ready', () => {
- client.user.setActivity(`$help | ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} Membri`, { type: 'STREAMING', url: url }) //you can replace "#"
+ client.user.setActivity(`Alla prossima ❤️ | ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} Membri`, { type: 'STREAMING', url: url }) //you can replace "#"
 
   client.on('debug', (a)=>{
   if(a.startsWith(`Hit a 429`)){
